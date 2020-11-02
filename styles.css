@@ -1,11 +1,300 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    height: 20px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    height: 800px;
+  
 }
+
+
+
+header .container{
+    display: inline-flex;
+    font-size: small;
+    height: 20px;
+    background-color: #fff;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: space-between;
+
+    grid-row: 1;
+    
+}
+header h1{
+    float: left;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 250px;
+    font-size: medium;
+    margin-right: 40px;
+
+}
+header .container nav{  
+    float: right;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    
+    font-size: medium;
+    
+   
+}
+nav ul{
+    text-align: center;
+    
+    
+}
+nav ul li {
+    display: inline-block;
+    color:  #000;
+}
+nav ul li a{
+    color: #6B7280;
+}
+
+nav ul li a:hover {
+    color: #5A67D8;
+}
+.overview-hero{
+    background-color: #E2E8F0;
+    height: 200px;
+    padding-bottom: 70px;
+
+}
+
+.overview-hero .container{
+    grid-row: 2;
+    padding-top: 50px;
+    display: flex;
+    
+
+}
+
+.overview-hero .container img{
+    grid-row: 2;
+    padding-bottom: 150px;
+    padding-right: 50px;
+    height: 150px;
+    width: 200px;
+    float: left;
+    margin: 10px;
+
+}
+
+.overview-hero .container .overview-hero-text h2 p{
+    padding-top: 50px;
+    padding-left: 50px;
+    float: right;
+    
+}
+
+.learn-about .container{
+    display: grid;
+    grid-template-rows: 10px 100px;
+    grid-template-columns: 100px 100px 100px;
+
+    grid-row: 3;
+}
+
+.learn-about .container h2{
+    grid-row: 1;
+    display: inline;
+    padding-bottom: 70px;
+    font-size: 24px;
+    color: #48BB78;
+    
+
+}
+.learn-about .container .cards{
+    grid-row: 2;
+    display: grid;
+    grid-template-areas: 'card1 card2 card3';
+    padding-top: 50px;
+    align-content: space-between;
+    padding-right: 50px;
+    margin-top: 50px;
+
+
+}
+.learn-about .container .cards h3{
+    color: #48BB78;
+    font-size: 21px;
+}
+
+.learn-about .container .cards .card:nth-child(1) {
+    height: 500px;
+    width: 250px;
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 20px;
+    border-color: #E2E8F0;
+    box-shadow: 5px 5px 5px 5px grey;
+    border-radius: 5px;
+    margin-right: 50px;
+    
+}
+
+.learn-about .container .cards .card:nth-child(2) {
+    height: 500px;
+    width: 250px;
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 20px;
+    border-color: #E2E8F0;
+    box-shadow: 5px 5px 5px 5px grey;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+.learn-about .container .cards .card:nth-child(3) {
+    height: 500px;
+    width: 250px;
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 20px;
+    border-color: #E2E8F0;
+    box-shadow: 5px 5px 5px 5px grey;
+    border-radius: 5px;
+
+}
+
+.learn-about .container .cards .card:nth-child(1) img{
+    height: 200px;
+    width: 250px;
+    padding-top: 50px;
+    padding-right: 20px;
+    
+    
+}
+
+.learn-about .container .cards .card:nth-child(2) img{
+    height: 200px;
+    width: 250px;
+    padding-top: 50px;
+    padding-right: 20px;
+   
+}
+.learn-about .container .cards .card:nth-child(3) img{
+    height: 200px;
+    width: 250px;
+    padding-top: 50px;
+    
+
+}
+.testing{
+    background-color: #4A5568;
+}
+.testing .container{
+    height: 300px;
+    display: flex;
+    grid-row: 4;
+    background-color: #4A5568;
+    color: #fff;
+    padding-top: 50px;
+    
+
+
+}
+.testing .container .testing-description{
+    float: left;
+    margin-top: 70px;
+}
+.testing .container .cta{
+    float: right;
+    height: 40px;
+    width: 160px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: medium;
+    background-color: #48bb78;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.testing .container .cta a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.stories .container{
+    grid-row: 5;
+    height: 700px;
+    
+}
+.stories .container h2 {
+    margin-bottom: 50px;
+    color: #5A67D8;
+
+}
+.stories .container .article-body h3  {
+    font-size: 18px;
+ 
+}
+
+.stories .container article:nth-child(1){
+    padding-bottom: 40px;
+
+}
+
+
+.stories .container article img{
+    float: left;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+}
+.stories .container article a{
+    color: #5A67D8;
+}
+.newsletter{
+    background-color: #48BB78;
+    color: #fff;
+    
+
+}
+.newsletter .container{
+    grid-row: 6;
+    height: 300px;
+    justify-content: center;
+    
+}
+.newsletter .container h3{
+    text-align: center;
+}
+.newsletter .container button{
+   background-color: #5A67D8;
+   height: 30px;
+
+}
+.newsletter .container .form {
+    display: inline-block;
+    
+}
+.newsletter .container #email{
+    height: 30px;
+    width: 250px;
+}
+
+
+footer{
+    grid-row: 7;
+    height: 70px;
+    background-color: #4A5568;
+    color: white;
+
+
+}
+
+
